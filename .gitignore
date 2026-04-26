@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.csv
+*.xml
+.env
+.env.*
+private/
+_private/
+backups/
+*.bak
+.DS_Store
+.vscode/
+.idea/
