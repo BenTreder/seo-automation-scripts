@@ -1,28 +1,36 @@
+cat > README.md <<'EOF'
 # SEO Automation Scripts
 
-A collection of practical scripts for improving website SEO, checking site structure, finding missing metadata, building sitemaps, and reviewing internal links.
+A clean collection of practical Python scripts for auditing and improving websites.
 
-## What This Includes
+These tools help check common SEO and website quality items such as:
 
-- Sitemap builders
-- HTML sitemap generators
-- Metadata checkers
-- Missing title and description reports
-- Internal link checkers
-- Broken link reports
-- Schema markup helpers
-- Image alt text checkers
-- Canonical tag checks
-- Basic SEO audit reports
+- Page titles
+- Meta descriptions
+- Canonical tags
+- Image alt text
+- Internal links
+- Broken links
+- Sitemap generation
+- Basic site structure
 
-## Use Cases
+## Why This Exists
 
-These scripts are useful for:
+This repo is designed for small business websites, local SEO projects, static HTML websites, and simple PHP/HTML sites.
 
-- Small business websites
-- Local SEO projects
-- Static HTML websites
-- PHP websites
-- WordPress exports
-- Content-heavy websites
-- Programmatic SEO sites
+## Scripts
+
+| Script | Purpose |
+|---|---|
+| `meta_checker.py` | Checks titles, meta descriptions, canonicals, and H1 tags |
+| `image_alt_checker.py` | Finds images missing alt text |
+| `internal_link_report.py` | Reports internal links found across HTML files |
+| `broken_link_checker.py` | Checks internal links for missing local files |
+| `sitemap_builder.py` | Builds a simple XML sitemap from local HTML files |
+
+## Install
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
